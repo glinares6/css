@@ -1,0 +1,125 @@
+/* SELECTORES DE ETIQUETA */
+/* p{
+    color: red;
+}
+h1{
+    color:blue;
+} */
+/* SELECTORES DE CLASE  */
+
+/* .title{
+    color: green;
+}
+
+.text{
+    color: blueviolet;
+} */
+
+
+/* SELECTORES DE ID */
+/* 
+#title{
+    color: aqua;
+}
+
+#text{
+    color: blue;
+}
+ */
+
+/* SELECTORES GLOBALES */
+/* *{
+    color:red
+} */
+
+/* sSELECTORES DE ATRIBUTO */
+/* seleccionar los elementos que tiene ese atributo */
+[href]{
+    color:red;
+}
+[href="#"]{
+    color:green;
+}
+/* seleccionar los elementos que tienen ese atributo al menos ese valor un vez */
+/* la virgulilla no olvidar -> ~  */
+[class~="verde"]{
+    color:green;
+}
+
+
+
+/* selecciona los elementos que tienen ese atributo y empiezan  ese valor  */
+/* acento circunflejo -> ^ */
+[class^="verde"]{
+    color:green;
+}
+
+/* selecciona los elementos que tienen ese atributo y contengan  ese valor  */
+/* acento asterisco -> * */
+[class*="medio"]{
+    color:purple;
+}
+
+/* selecciona los elementos que tienen ese atributo y terminan  ese valor  */
+/* dolar -> $  */
+ [class$="azul"]{
+    color:steelblue;
+} 
+
+/* selecciona los elementos que tienen ese atributo y exactamente ese valor o empieza por el valor seguido */
+
+/* simbolo pie o tuberia  -> | */
+[class|="purpura"]{
+    background-color:purple;
+    color:beige;
+}
+
+
+
+
+/*   + - / * | ~ ^  */
+
+
+/* SELECTORES CONBINADORES  */
+
+/* selector de hermano adyacente */
+/* selecciona al hermano que justo este debajo de el , el  estilo se le aplica al hermano inferior */
+h1 + h2{
+    color:red;
+}
+h2 + h2{
+    color:blue;
+}
+h2+ h3{
+    color:green;
+}
+h3 + h4{
+    color: purple;
+}
+
+
+/* SELECTOR DE HERMANO GENERAL*/
+/* selecciona a todos los hermanos que esten debajo de el ,el estilo se aplica a todos los hermanos */
+
+h1 ~ h3{
+    color:green;
+}
+
+/* SELECTOR DESCENDENTE */
+/* seleccona todos los hijos ,el  estilo se aplica a todos los hijos */
+p span{
+    color: red;
+}
+
+/* SELECTOR DE HIJO DIRECTO */
+/* seleccona todos los hijos  que sean directos,es decir que no esten dectro de otras etiquetas,el  estilo se aplica a todos los hijos */
+
+div> span{
+    color:blue
+}
+
+
+
+
+
+

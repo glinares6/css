@@ -1,0 +1,12 @@
+CSS1 Cascading Style Sheets, level 1
+https://www.w3.org/TR/REC-CSS1-961217
+CSS 2 Cascading Style Sheets, Level 2
+https://www.w3.org/TR/1998/REC-CSS2-19980512/
+CSS 2.1 Cascading Style Sheets Level 2 Revision 1
+https://www.w3.org/TR/CSS2/
+CSS 2.2 Cascading Style Sheets Level 2 Revision 2:
+https://www.w3.org/TR/CSS22/
+CSS 3 (MDN)
+https://www.w3.org/TR/CSS22/
+CSS Snapshot 2020: 
+https://www.w3.org/TR/CSS/#properties

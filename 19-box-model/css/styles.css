@@ -1,0 +1,37 @@
+body{
+    background-color:#333;
+    color:#fff;
+}
+
+.title{
+
+    width:300px;
+    background-color:lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+div{
+    
+    margin-left: 25%;
+}
+
+.block{
+    background-color:purple;
+    width: 200px;
+    height:200px;
+    /* margin: 100px 50px 10px 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+
+.inline{
+    background-color:lightcoral;
+    color:inherit;
+    margin-top: 100px;
+
+}

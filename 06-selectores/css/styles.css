@@ -1,0 +1,95 @@
+/*
+    slectores sinples 
+        selecrores elementales
+            selector universal -> *
+            selector de tipo o etiqueta -> nombew de la etiqueta
+
+        selecrtores de atributo
+
+            id-> id del elemento
+            clade -> clade del elemento 
+
+            otros atributos
+                [atributo]
+                [atributo=valor]
+
+                [atributo^=valor] ->empieza por ese valor
+
+                [atributo*=vvalor]f-donde se encuentre ubicado
+
+                [atrinuyo$=valor]->si termina por ese valor
+
+                [atributo|=valor]->toma el atrinuto y su vlaor
+
+    selectores conpuestos -> requieren mas de una palabra o simbolo
+        slectores agrupados 
+        
+        selectores combinadores 
+        pseudoclases -> pseudoelementos
+*/
+
+
+/* selector universal */
+/* *{
+    background-color: lightcoral;
+} */
+
+
+/* selectores de tipo o  etiqueta -> reseteo(nornalizar estilos) */
+/* h1{
+    background-color: lightcyan;
+}
+
+p{
+    background-color:lightgreen;
+}
+
+ul{
+    background-color: red;
+}
+
+li{
+    background-color: blue;
+}
+ */
+
+
+
+ /* selectores de atributo */
+#title{
+    background-color: lightgreen;
+}
+.title{
+    background-color: lightsalmon;
+}
+
+.texto{
+    background-color: lightgreen;
+}
+
+
+/* selector de atrinuto */
+[href]{
+    background-color: mediumorchid;
+}
+
+[href="https://google.com"]{
+    background-color: orangered;
+}
+
+[href^="color"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: red;
+}
+[href*="modo"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: green;
+}
+[href$="azul"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: steelblue;
+}
+
+[lang|="en"]{
+    background-color: magenta;
+}

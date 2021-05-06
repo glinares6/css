@@ -1,0 +1,79 @@
+/*
+¿COMO FUNCIONA CSS?
+Especificidad -> establece como de especifico es  un selector para saber que estilos aplicar 
+los calculos se realizan con la siguiente formula
+    etiquetas y pseudoelementos  001
+    clases atrinutos y pseuclases 010
+    id 100
+    estilos en linea 1000
+    important ->gana a 1000
+
+Cascada ->cascada funciona siempre que la especificidad con el elemtno sea la misma 
+Herencia 
+
+PARA VALIDAR EL CSS USAR CSS VERIFIF GRAPH GENERADOR
+https://jonassebastianohlsson.com/specificity-graph/
+*/
+
+
+/* CASCADA */
+/* h1{
+    background-color: red;
+}
+
+.title{
+    background-color: blue;
+}
+
+#title{
+    background-color: green;
+}
+
+h1.title{
+    background-color: yellow;
+}
+
+h1#title{
+    background-color: teal;
+}
+
+h1.title#title{
+    background-color: tomato;
+} */
+
+/* para que la cascada funcione la especifidad no debe variar POR EJEMPLI USAR CLASES*/
+
+/* .title{
+    color: teal;
+} */
+
+
+/* HERENCIA */
+/* inherit->hereda la propiedad del padre 
+    initial ->como estubo su propiedad desde el principio
+*/
+
+body{
+    background-color: #333;
+}
+.title{
+    color: cyan;
+    font-size: 10px;
+}
+
+.text{
+    color: red;
+}
+
+.link{
+    color: inherit;
+}
+
+.list{
+    color:indianred;
+}
+
+.list-item-extra{
+    color:initial;
+}
+

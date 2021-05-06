@@ -1,0 +1,140 @@
+/*
+    selectores sinples 
+        selecrores elementales
+            selector universal -> *
+            selector de tipo o etiqueta -> nombew de la etiqueta
+
+        selecrtores de atributo
+
+            id-> (#)id del elemento
+            clase ->(.) clase del elemento 
+
+            otros atributos
+                [atributo]
+                [atributo=valor]
+
+                [atributo^=valor] ->empieza por ese valor
+
+                [atributo*=vvalor]f-donde se encuentre ubicado
+
+                [atrinuyo$=valor]->si termina por ese valor
+
+                [atributo|=valor]->toma el atrinuto y su vlaor
+
+    selectores conpuestos -> requieren mas de una palabra o simbolo
+        swlectores agrupados -> se agrupa por  comas (,)
+        selectores combinadores 
+
+            selector decencientes ->seleccionar un elemento dentro de otro(hijo) 
+            
+            selector de hermano siguiente-> (+) nos permite seleccionar un elemento del mismo nivel
+
+            selector de hermanos siguiente(todos) -> ~
+
+            selector de hijdo directo-> se seleccionan todos  los hijojs excepto los nietos
+        
+        pseudoclases -> pseudoelementos
+
+
+*/
+
+
+/* selectores agrupados */
+/* .text, 
+.text-2, 
+.text-3, 
+.text-4{
+    background-color: steelblue;
+} */
+
+/* selectores conbinadores */
+/* h2{
+    background-color: teal;
+} */
+
+
+/*selector de  hijo directo */
+.container > p{
+    background-color: tomato;
+}
+/* selectores descendientes */
+div .title-2{
+    /* background-color: teal; */
+}
+
+/* selectores de hermano siguiente */
+.text-2 + h2{
+    background-color:tomato
+}
+
+/* selectore sde hermano siguiente todos */
+.text-2 ~ .text  {
+    background-color:teal;
+}
+
+
+
+/* selector universal */
+/* *{
+    background-color: lightcoral;
+} */
+
+
+/* selectores de tipo o  etiqueta -> reseteo(nornalizar estilos) */
+/* h1{
+    background-color: lightcyan;
+}
+
+p{
+    background-color:lightgreen;
+}
+
+ul{
+    background-color: red;
+}
+
+li{
+    background-color: blue;
+}
+ */
+
+
+
+ /* selectores de atributo */
+/* #title{
+    background-color: lightgreen;
+}
+.title{
+    background-color: lightsalmon;
+}
+
+.texto{
+    background-color: lightgreen;
+} */
+
+
+/* selector de atrinuto */
+[href]{
+    background-color: mediumorchid;
+}
+
+[href="https://google.com"]{
+    background-color: orangered;
+}
+
+[href^="color"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: red;
+}
+[href*="modo"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: green;
+}
+[href$="azul"]{
+/* ^ ->empiezan por ese valor  */
+    background-color: steelblue;
+}
+
+[lang|="en"]{
+    background-color: magenta;
+}

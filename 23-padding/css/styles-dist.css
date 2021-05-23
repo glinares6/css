@@ -1,0 +1,73 @@
+/*
+    Se considera mala practica poner un estilo general,ya que tendras que cambiarlo en cada clase .se genera mas codigo de lo usual a largo plazo
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body{
+    
+    color: #fff;
+    background-color:#333;
+    margin: 0px;
+}
+
+.header{
+    background-color: red;
+    height: 50px;
+
+}
+.title{
+
+    width:300px;
+    background-color:lightcoral;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* esto no es buena practica por que heredan otros elementos esta propiedad.preferentemente usar una clase para llamar al elemento especifico */
+/* div{
+    
+    margin-left: 25%;
+} */
+
+.block{
+    background-color:purple;
+    width: 200px;
+    height:200px;
+    /* margin: 100px 50px 10px 200px; */
+    /* no es buena practica asignar margin top  auto por que se descuadra el tamaño */
+    /* margin-top:  0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+
+.inline{
+    background-color:lightcoral;
+    color:inherit;
+    /* margin-top: 100px; */
+    /* padding-top: 100px;*/
+    /* margin-left: 100px; */
+}
+
+.buttons{
+    background-color: steelblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.button{
+    margin-left: 90px;
+    padding: 25px 50px;
+    border: 20px solid red;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red;
+    border-right-color: blue;
+}
+

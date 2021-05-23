@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles-dist.css">
+    <title>Document</title>
+    <!--
+        padding
+        Es la propiedad que nos permite generar espacio interno entre el borde y la caja.
+        Es un shorthand(propiedad abreviada),que controla los 4 lados posibles a los que dar padding.
+        padding-top:
+        padding-right:
+        padding-bottom: 
+        padding-left:
+
+         admiten hasta 4 valores que van en el orden de las agujas del reloj
+                4 variables-> padding: top right bottom left;
+                3 variables ->padding: top left/rigth bottom ;
+                2 variables ->padding: top/bottom left/right
+                1 valor-> padding: top/right/bottom/left
+
+
+        border
+            Es una propiedad que nos permite modificar el borde de la caja
+            Es un shorthand(propiedad abreviada) que agrupa 3 propiedades
+                border-width: ancho del borde
+                    border-top-width
+                    border-right-width
+                    border-bottom-width
+                    border-left-width
+                border-style: estilo del borde
+                    border-top-style
+                    border-right-style
+                    border-bottom-style
+                    border-left-style
+                        none->borde vacio
+                        hiddden-> borde oculto
+                        dashed-> borde circular
+                        dotted-> borde rectangulo
+                        double-> borde doble
+                        grovve-> borde superior isquierdo sombreado    
+                        ridge-> lo opuesto a grovve
+                        solid-> borde por defecto
+                        inset-> borde inferior isquierdo sobreado
+                        outset-> lo opuesto a unset
+                border-color: color del borde
+                    border-top-color
+                    border-right-color
+                    border-bottom-color
+                    border-left-color
+        
+        box-sizing
+            Es una propiedad que nos permite controlar el calculo que hace el navegador a la hora de modificar las propiedades content,padding y borde3r.
+            Las dos variable que podemos daele son:
+                content-box: valor por defecto
+                border-box:calcula el tamaño del elemento incluyendo el padding y el border.
+
+                
+                
+                NOTAS --------------------------------*>
+                los elementos de LINEA solo tienes margenes horizontales
+
+                para usar la propiedad AUTO se debe declarar un ANCHO Y UN ALTO
+                <-------------------------------------
+    -->
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">MENU</nav>
+    </header>
+    <h1 class="title"><div>box model</div></h1>
+    <!-- <a href="#" class="inline">elemento de linea 1</a>
+        <a href="#" class="inline">elemento de linea 2</a> -->
+        <div class="block">Elemento de bloque</div>
+        <a href="#" class="inline">elemento de linea</a>
+        <div class="buttons">
+            <button class="button">SOY UN BOTON</button>
+        </div>
+</body>
+</html>

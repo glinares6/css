@@ -1,8 +1,22 @@
+/*
+    Se considera mala practica poner un estilo general,ya que tendras que cambiarlo en cada clase .se genera mas codigo de lo usual a largo plazo
+*/
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 body{
-    background-color:#333;
+  
     color:#fff;
+    margin: 0px;
 }
 
+.header{
+    background-color: red;
+    height: 50px;
+
+}
 .title{
 
     width:300px;
@@ -22,6 +36,8 @@ div{
     width: 200px;
     height:200px;
     /* margin: 100px 50px 10px 200px; */
+    /* no es buena practica asignar margin top  auto por que se descuadra el tamaño */
+    /* margin-top:  0 auto; */
     margin-left: auto;
     margin-right: auto;
     

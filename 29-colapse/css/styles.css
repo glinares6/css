@@ -1,0 +1,53 @@
+/* LOS MARGENES VERTICALES COLAPSAN
+    en los margenes orizontales no hay ningun problema
+        SE RECOMIENDA APLICAR AL FINAL DEL ELEMENTO PARA EVITAR DESBORDES
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+
+/* ****************************************************************************************************** */
+/* para elementos verticales hijos se recomienda usar estos trucos que se modifican desde el elementos padre */
+.header{
+    background-color:lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /* truco 1 ->colapse */
+        /* overflow: hidden; */
+
+    /* truco 2 ->colapse */
+        /* padding-top: 0.1px; */
+    /* truco 3 ->colapse */
+        border-top:0.1px solid lightcoral;
+
+}
+
+.box-1,
+.box-2{
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 20px; */
+    background-color:lightcyan;
+    width: 300px;
+    height:300px;
+}
+
+.title{
+    margin: 0;
+    margin-top: 50px;
+}
+
+/* *************************************************************************************************** */
+/* para el coplapse de elemetnos verticales   se usan los margenes inferiores
+ no se recomienda usar margin top en el caso de colapse, ens otras situaciones si 
+*/
+.box-1{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,86 @@
+/*
+    border-radius:es la propiedad que nos permite redondear vertices de forma independiente
+
+    Es un shordhand que engloba 4 propiedades:
+    border-top-left-radius-> radio del borde superior isquierdo
+    border-top-right-radius-> radio del borde superior derecho
+    border-bottom-right-radius-> radio del borde inferior derecho
+    border-bottom-left-radius-> radio del borde inferior isquierdo
+
+    si solo recibe un valor dibujara un circulo en cada vertice del radio que especificamos
+
+    border-raius:50px; circulo con 50px de radio.
+    si utilizamos el border-radius como shordhand,hay diferencias si quieremos dar un valor a cada lado (circulo) o dos (elipse).
+
+    con un solo valor (circular)
+        border-radius:50px ->circulo de 50px a cada vertice
+        border-radius: 50px 100px -> vurculo con 50pc en el vertice superior isquierdo y en el inferior derecho y de 100px en el superior derecho y el inferior isquierdo.
+        border-radius:50px 100px 200px -> circulo de 50px en el vertice superior isquierdo ,100px en el superior derecho  y el inferior isquierdo y de 200px en el inferior derecho
+        border-radius: 50px 100px 200px 300px -> circulo de 50px en el vertice superior isquierdo ,100px en el superior derecho ,de 200px en el vertice inferior derecho ,de 300px en el vertice inferior  isquierdo.
+
+    Si le damos 2 valores separados por una barra,dibujara una elipse por cada vertice con los radios que le especifiquemos.
+    border-radius: 50px / 100px -> elipse de 50px  en el radio x  y 50px en el radio y
+
+        con 2 valores:(eliptico)
+        Al tener 2 radios debemos agrupar los radios y separar por una barra.
+        border-radius: 25px / 50px ; elipse de 25px  en Y  y 50px en X a cada vertice.
+
+        border-radius: 25px 50px / 50px 100px -> elipse de 25px en Y, y 50px en X   a los vertices superior isquierdo  e inferior derecho y una elipse de 50px en Y ,100px en x en los vertices superior derecho e inferior  isquierdo.
+
+        border-radius 25px 50px 75px / 50px 100px 150px ; ->  eclipse de 25px en Y  y 50px en X  al vertice superior isquierdo ,una elipse de 50px en Y y 100px en X en los vertices superior derecho e inferior isquierdo y una elipse de 75px en Y y 150px en X al vertice inferior derecho.
+        
+        border-radius:25px 50px 75px 100px / 50px 100px 150px 200px -> elipse de 25px en Y 50px en X al vertice superior isquierdo , una elipse de 50px en Y y 100px en X con el vertice superior derecho  y una elipse de 100px en X  y de 200px en Y en el vertice inferior isquierdo.
+
+
+
+        overflow
+            Decimos que un contenido se desborda cuando la caja es más pequeña que el contenedor
+
+            si la propiedad que cntrola que debe hacer la caja cuando su contenido se deborda del contenedor 
+            Es un shorthand que engloba overflow-x y overflow-y 
+            Tiene 4 posibles valores :
+                visible-> Es el valor por defecto
+                hidden-> el contenido que se desborda no se vera.Si aplixamos esta propiedad en un solo eje,el otro se pondra automaticamente en el valor scroll 
+                scroll-> Apareceran barras de control en el eje asignado(x, y o ambos)
+                auto-> apareceran barras de scroll en el caso de que se hicieran falta
+
+*/
+
+ *{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color:lightcyan;
+    width: 300px;
+    height: 300px;
+    color: #000;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    /* overflow: auto; */
+    /* overflow-x: hidden;  */
+    overflow: hidden; 
+    border-radius: 50px;
+
+} 
+
+.box-1,.box-2{
+    padding: 17px;
+    background-color: lightcoral;
+}
+
+.text{
+    /* width: 350px; */
+    margin: 0;
+}
+
+

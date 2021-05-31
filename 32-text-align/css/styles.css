@@ -1,0 +1,83 @@
+/* 
+    text align -> es la propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el conenido NO TENGA  ANCHO DECLARADO
+
+    acepta los siguientes valores::
+        text-align:left-> alinea el contenido a la isquierda
+        text-align:right->alinea el contenido a la derecha
+        text-aling:center-> alinea el contenido al centro
+        text-align:justify-> alinea el contenido de forma justificada.No es recomendable usarlo
+
+*/
+
+/* daros a considerar:
+    para centrar el contenido 
+        el contenido sin width declarado
+        debe ser un contenido de bloque
+
+    para centrar una caja
+        se debe usar la propiedad margin-left/rigth
+    para centrar una imagen
+        el contendio por defecto tendra un display:inline-block
+
+    si de declara un contenido dentro de un  div
+        se puede usar directamente la propiedad text-aligns
+
+    si se pone un ancho declarado no se  debe asignar la propiedad display:block para poder centrar el contenido
+*/
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color:#333;
+    color: #fff;
+}
+.text{
+    text-align: justify;
+}
+.box{
+    /* el div no tiene un display definido por eso se puede poder la propiedada text-align */
+    background-color:#666;
+    width: 100px;
+    padding: 10px 0;
+    margin:20PX 0;
+    border: 2px solid lightcoral;
+    /* para central el contenido */
+    text-align: center;
+    /* para centrar la caja */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link{
+
+    /* tiene la propiedad display:inline por eso se debe poner en bloque */
+    /* solo con elenmentos de bloque se centra el contenido no con inline-block */
+
+    color: #fff;
+    background-color: #666;
+    /* cuando agregas un width el contenido la caja se rompe para solucionarlo se usa margin-left/right */
+    /* para centrar la caja */
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    /* para centrar el contenido se necesita el elemento en  bloque */
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.img-container{
+    /* por ser un elemento div se puede poder directamente text align y el contenido se centrara */
+    text-align: center;
+}
+.img{
+    /* tiene la propiedad display:inlineblock */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    /* no se puede usar text align por el contenido ocupa todo el bloque */
+    /* text-align: center;  */
+}

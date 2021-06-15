@@ -32,9 +32,66 @@
             fixed-> El elemento perdera sus medidas y su espacio reservado.
             Si lo movemos usara el elemento html de referencia, ademas se quedara fijo en esta posicion aunque hagamos scroll.
 
-            sticky-> Es una mezcla de position relative y fixed.
-            Con este tipo de posicionamiento los valores top,left,bottom y right no sirven para mover el elemento, sino para indicar en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara como si tuviera relative.
+            sticky-> Es una mezcla de position relative y "fixed".
+            Con este tipo de posicionamiento los valores top,left,bottom y right no sirven para mover el elemento, sino para indicar en que punto pasara a tener un comportamiento de posicionamiento fixed, hasta llegar a ese punto se comportara como si no tuviera posicionamiento ,aunque si contara como posiciocionamiento como si necesiraramos colocar otro elemento  respecto a el (absolute).
             
 
 
 */
+
+/* si vas a posicionar elemetnos de linea y quieres que tengan la propiedad dispñay:block/inline-block basta con poner POSOTION ABSOLUTE ya que por defecto tenga esos valores  */
+
+/* POSITIN FIXED siempre se va colocar sobre el html, pierde su espacio reservado y sus medidas 
+
+    Para que funcione  se necesitta que el  contenido genere un scroll
+     No va funcionar position sticky cuando tenga un overflow declarado que no se visible 
+
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+img{
+    display: block;
+    /* height: 150px; */
+    width: 100%;
+}
+
+.header{
+    text-align: center;
+    background-color: lightskyblue;
+    color: orangered;
+
+    /* cuando el header este a 0px del top va tener un comportamiento parecido al de fixed  */
+  
+    height: 200px;
+    /* no va funcionar position sticky cuando tenga un overflow declarado que no se visible */
+    /* overflow: hidden; */
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    
+    /* si la propiedad no tiene un ancho declarado no se aplica sticky en el header */
+    /* height: 200px; */
+}
+
+article{
+    outline: 3px solid red;
+}
+.article-title{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    margin: 0;
+}
+
+

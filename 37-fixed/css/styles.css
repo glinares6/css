@@ -38,3 +38,35 @@
 
 
 */
+
+/* si vas a posicionar elemetnos de linea y quieres que tengan la propiedad dispñay:block/inline-block basta con poner POSOTION ABSOLUTE ya que por defecto tenga esos valores  */
+
+/* POSITIN FIXED siempre se va colocar sobre el html, pierde su espacio reservado y sus medidas  */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    padding-top: 70px;
+}
+
+.header{
+    text-align: center;
+    padding: 25px 0;
+    background-color: lightskyblue;
+    color: orangered;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.link{
+    position: fixed;
+    background-color: lightcoral;
+    width: 200px;
+}

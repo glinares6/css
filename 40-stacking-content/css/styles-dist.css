@@ -1,0 +1,53 @@
+/* 
+    ELstacking content  o el contexto de apilamiento ,es el espacio donde nuestros elementos se van a ir apilando para que unos quedn por detras y otros por delante.
+
+    EL orden del stacking content es: (de adelante a atras):
+    Elementos posicionados: Con un z-index de 1  o más.
+    Elemento posicionado :sin el z-index declarado(o z-index:auto)
+    Elementos no posicionado
+    Elementos con z-index :negatio.
+    
+*/
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: #333;
+}
+
+.box-1{
+    background-color: lightcoral;
+    position: relative;
+    z-index: 1;
+}
+.box-2{
+    background-color: lightgreen;
+    margin-top: -50px;
+
+}
+.box-3{
+    background-color: lightseagreen;
+}
+
+.container{
+        background-color: mediumslateblue;
+        margin-top:-50px;
+        position: relative;
+        /* opacity: 0.99; */
+}
+
+.title{
+    /* Para tener opacidad es necesario que el z-index este definido y su position  */
+    margin: 0;
+    background-color: #ccc;
+    position: relative;
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.text{
+    margin: 0;
+    margin-top: -40px;
+}

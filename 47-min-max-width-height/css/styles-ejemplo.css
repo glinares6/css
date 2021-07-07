@@ -1,0 +1,30 @@
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            position: relative;
+            margin: 0;
+            /* este truco se usa cuando se necesita un elemtnto en la parte inferior de la pagina y su contenido no se rellena todo */
+            min-height: 100vh;
+            color: lightcoral;
+            background-color: #333;
+            border: 4px solid red;
+            
+        }
+
+        /* p{
+            margin: 0;
+        } */
+
+
+        .footer{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: 1rem 0;
+            color: white;
+            text-align: center;
+            background-color: lightseagreen;
+        }

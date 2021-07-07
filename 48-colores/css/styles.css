@@ -1,0 +1,25 @@
+/* la mayoria de las pantallas funcionan con un solo color .
+    la suma del RGB da como resultado un blanco 
+    Tenemos varias formas de dar color en css.
+
+    keywoeds-> Palabras clabes que representan colores.
+    https://www.w3.org/wiki/CSS/Properties/color/keywords
+    IMPORTANTE: recordar que existe el  color "transparent"
+*/
+
+body{
+    margin: 0;
+    background-color:#333;
+}
+
+.box{
+    border-bottom: 250px solid blue;
+    border-right:400px solid  yellow;
+    border-left: 400px solid  red;
+    /* width: 300px;
+    height: 300px;
+    background-color: lightcoral;
+    color:lime; */
+    
+}
+

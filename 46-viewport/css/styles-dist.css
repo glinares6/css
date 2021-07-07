@@ -1,0 +1,95 @@
+/* 
+    las medidas en css se pueden agrupar en 3 grupos, absolutas y relativas.
+
+    Las medidas absolutas NO CAMBIAN  y siempre mantendra su tamaño independientemente del dispositivo  a la interaccion del usuario.
+
+    la más usada es px(pixeles) cuya medida es 1/96 de lin pero existen otro como:
+
+    cm(centimetros) ->1cm -> 96px/2,54
+    mm(milimetro) -> 1mm -> 1/10 de 1cm
+    Q(cuarto de milimetro) -> 1Q -> 1/40 de 1cm
+    in(inches,pulgadas) 1in 2,54 = 96px
+    pc(pico) -> 1pc = 1/16 de 1in
+    pt(puntos) -> 1pt= 1/72 de 1pt
+
+    Las medidas relativas SIEMPRE siempre dependen de un contexto son las que se recomiendan  utilizar en la gran mayoria de ocasiones por que nos van a permitir que todos los elemetos escalen proporcionalmente .
+    Los más usados son em,rem,%,vw,vh,vmin y vmax aunque tenemos otras como:
+        ex-> altura x de la fuente del elemento.
+        ch-> las medidas del ancho del  glifo "0" de la letra del elemenmeto.
+        ln-> Altura de la linea de la linea del elemento
+
+        ejempli 16px ´-> 1rem
+        rem->Corresponde a la medida de la "m" de la raiz del documento (html).
+
+        em-> Corresponde a la medida de la "," del contexto donde nosencuontramos.
+
+        El estandar  del tamaño de fuente por defecto en la raiz del documento es 16px y NO ES RECOMENDABLE MODIFICARLO
+        
+        Nota:Tanto "em" como "rem" se coloca en base a la propiedad font-size (tamaño de fuente).
+
+        % -> cuando usamos porcentaje usamos de referencia el tamaño del contenedor  y el navegador usa ese porcentaje .Esto no ocurre cuando usamos transform.
+
+        Auto -> Cuando usamos auto le pedimos al navegador que calcule en función del espacio disponible.
+
+
+
+        NOTA-> De manera general se usa el 100%, pero cuando se usa los margenes se recomienda poner modo auto,para que no se rompa las medidas.
+
+        HEIGHT
+        % -> Cuando estamos dentro de un contenedor ,este tiene que tener un alto declarado,sino no podras calcular el porcentaje.Si se le aplica una medida con porcentaje se sustituira automaticamente por auto.
+
+        auto -> Cuando utilizamos auto el auto lo calculara el navegador ,en base al contenedor del elemento.
+        
+        NOTA: Height es una propiedad que teneis que usar con mucho cuidado .Si no es necesario establecer un alto ,dejad que el contenido sea el que decida el alto del elemento.
+
+
+        VIEWPORT
+
+        El area util donde se mostrara la pagina web ,IMPORTANTE tener el cuenta que es area visible sin hacer scroll.
+        PPodemos usar el vireport como medidas de varias formas::after
+            vw-> viewport width,hace referencia al ancho del viewport.
+            vh-> viewport height ,hace referencia al alto del viewport.
+            vmax-> se utiliza el valor más grande entre el ancho y el alto del viewport.
+            vmin-> se utiliza el valor más pequeño  entre el ancho y el alto del viewport.
+
+            1vw -> 1% del ancho del viewport
+            1vh-> 1% del alto del viewport
+            vmin-> 1% del valor que sea más pequeño del viewport
+            vmin-> 1% del valor que sea más grande del viewport
+
+        */
+        
+        html{
+            height: 200px;
+        }
+        body{
+            margin: 0;
+            background-color: #333;
+            color: lightcoral;
+            
+        }
+
+        .header{
+            background-color: lightskyblue;
+            text-align: center;
+            /* height: 100vh; */
+        }
+
+        .box{
+            width: 300px;
+            /* margin: 0 50px; */
+            height:  300px;
+            /* padding-bottom: 30px; */
+            background-color: lightgreen;
+        }
+
+        .box-children{
+            top: 0;
+            position: sticky;
+            width: 30vmax;
+            /* width: 50vw; */
+            /* cuando se usa el position absolute toma el tamaño del vierport */
+            height: 150px;
+            /* margin-left: 50px; */
+            background-color: lightseagreen;
+        }

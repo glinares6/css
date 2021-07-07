@@ -1,0 +1,55 @@
+/* la mayoria de las pantallas funcionan con un solo color .
+    la suma del RGB da como resultado un blanco 
+    Tenemos varias formas de dar color en css.
+
+    keywoeds-> Palabras clabes que representan colores.
+    https://www.w3.org/wiki/CSS/Properties/color/keywords
+    IMPORTANTE: recordar que existe el  color "transparent"
+
+    current-color-> Es una pañabra clave que se puede usar en lugar de cualquier valor de color y usara el valor ya sea establecido o heredado en la propiedad color.
+
+
+    RGB/RGBA
+        En el modo rgb tenemos 3 canales (red,green ,blue) y tenemos 8 bits de color por canal (cada bit tiene 2 posibles valores 0 y 1), y lo que significan que tenemos 2^8 posibles valores ,que van desde 0 a 255.
+
+        Esto nos da un total de 255*255*255=16,581.375 colores.
+
+        su sintaxis es RGB(RGB,).
+        sI PONEMOS A TODOS LOS CANALES 
+
+        Si Ponemos todos los canales a 0 tendremos un negro oscuro  y su¡u y si los ponemos a 255 tendremos el blanco.
+
+        Para movernos en una gama de grises debemos poder los 3 canales en un mismo valor .Si ponemos los 3 canales a 138 tendremos un gris puto.
+
+        El modo RGB da la opción de utilizar un 4 canal ,que coresponde al canal alpha , es decir la transparencia y su valor va desde el 0 y el 1 .Tenemos 2 sintaxis para usar el canal  alpha 
+            rgba(R,G,B,A)
+            rgb(RGB/A)
+*/
+
+body{
+    background-color:mediumorchid;
+    color: aquamarine;
+}
+
+/* .main{
+    color:aquamarine;
+    background-color: currentColor;
+} */
+
+.box{
+    /* border-bottom: 250px solid blue;
+    border-right:400px solid  yellow;
+    border-left: 400px solid  red; */
+
+
+    width: 300px;
+    height: 300px;
+    /* Hereda del color más proximo */
+    background-color: lightcoral;
+    /* background-color: rgb(0, 255, 255); */
+    /* background-color: rgb(0 0 0 / 0.3); */
+    /* border:   5px solid; */
+
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+}
+

@@ -1,0 +1,63 @@
+/* 
+
+  La tipografia es la ciencia que estudia el diseño y uso de los tipos de letras.
+
+    Las fuentes son tipos especificos de letra
+
+    Los glifos son cada una de los dibujos que representan cada simbolo de la fuente ,incluida los espacios.
+
+    Los estilos de fuente son las modificaciones que se hacen a las fuentes ,como el grosor de la inclinación.
+
+    Familia tipografica -> son las diferentes fuentes que pertenecen a una fuente base.
+
+    Cuando usamos la propiedad text-* estamos afectando a un bloque completo.
+
+    Cuando utilizamos una propiedad font-* afectamos a la fuente del texto.
+
+    Fuentes predeterminadas-> son las fuentes que se consideran seguras , ya que son generadas y no establecen una familia tipografica,sino un estilo de fuente.
+        serif-> fuentes que tiene serifas(adornos en los caracteres).
+        sans-seft-> fuentes sin serifas.
+        monospace-> fuentes que tienen el mismo espaciado entre todos sus caracteres.(se usa como código)
+        cursive-> formato que pretende emular escritura a mamo,con ligaduras y trazos fluidos.
+        fantasy-> fuentes que suelen ser decorativas.
+        
+
+    Fuentes desde un servidor remoto , son fuentes que se encuentran en un servidor y que nosotros descargamos, para su uso ,la más famosa es google fonts.
+
+    Siempre que usemos fuentes no genericas ,debemos poder fuentes genericas de folback(respaldo).
+
+
+    REFERENCIA::
+    GOOGLE FONTS
+        https://fonts.google.com/
+
+    GOOGLE ICONOS
+        Material icons
+            https://fonts.googleapis.com/css?family=Material+Icons
+        Material icons-outlined
+            https://fonts.googleapis.com/css?family=Material+Icons+Outlined
+        Material Icons Two Tone
+            https://fonts.googleapis.com/css?family=Material+Icons+Two+Tone
+        Material Icons Rounded
+            https://fonts.googleapis.com/css?family=Material+Icons+Round
+        Material Icons Sharp
+            https://fonts.googleapis.com/css?family=Material+Icons+Sharp
+
+    NOTA: Si vas a usar una gran cantidad de iconos en tu web ,conpensa usar la libreria remota.
+    Si solo usaras unas pocos en mejor descargarlos en formato svg y utilizarlos como imagenes.
+
+*/
+
+
+body {
+    background-color: #333;
+    color: aliceblue;
+    /* font-family: sans-serif; */
+
+
+}
+
+.icon{
+    /* font-size: 2rem; */
+    fill: red;
+}

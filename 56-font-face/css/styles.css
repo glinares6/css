@@ -1,0 +1,49 @@
+/* 
+    Formato para fuentes
+        True Type Font (TTF) ->  Fue el primer formato estandar.
+
+        Open True Type FontF(OTF) -> Facilitar o implementar la creación de las curvas.
+
+        Web Open Font Format  (WOFF)  , (FOFF2) -> Es un formato mucho más ligero y mejora el rendimiento, funciona a travez de metadatos,WOOFF tiene soporte total y WOFF2 no funciona en internet explorer.
+
+        Scalable Vector Type(SVG) -> Para animaciones sobre texto, no es recomendable usarlo para el texto generico de la web,tiene muchos problemas.
+
+        Embedeb Open Digital (EOD) ->Promer formato digital propuesta para sitios web y es comprimida, se quedo como una propuesta pero no llego a ser estandar.
+        
+        Regla @font-face {
+            font-family-> Nombre de la familia se la asignamos noostros.
+                src-> Aqui podremos dos tipos de valores.
+                    Local()-> Pondremos el nombre de la fuente, para buscarla en el ordenador del usuario,de esta forma podría evitar descargarla.
+                    url()-> si no encontramos esa fuente procedemos a descargarla.
+
+                Existe otro valor menos usado que es format.
+                format()->este valor lo pasaremos de forma opcional, si queremos ser más esplicitos con la fuente que vamos a buscar o descargar, si no podemos cogera el primer formato soportado,si lo ponemos solo usara el que hemos establecido y si no lo encuentra no usara nada.
+        }
+
+        Podemos añadir más valores como font-style, font-weight y font-display(experimental),pero esos son experimentales.
+
+        
+        REFERENCIAS
+        https://www.1001fonts.com/
+        https://www.dafont.com/es/
+        
+        Para hacer más ligero la descarga de fuente se necesita que dea de ttf a woff
+        https://convertio.co/es/ttf-woff/
+
+        Extensiones
+            whatfont
+            https://chrome.google.com/webstore/detail/whatfont/jabopobgcpjmedljpbcaablpmlmfcogm?hl=es
+
+
+*/
+
+@font-face{
+    font-family: 'mano-alzada';
+    src: url('../../assets/fonts/fuente.ttf');
+}
+
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: "mano-alzada";
+}

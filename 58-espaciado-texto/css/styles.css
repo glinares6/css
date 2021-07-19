@@ -110,7 +110,7 @@ body{
     /* para establecer la direccion del texto */
     /* writing-mode: vertical-rl; */
 
-    /* escribir el texto en una sola linea */
+    /* escribir el texto en una sola linea , es importante que tenga una medida sino la propiedad no funcionara*/
     word-break: break-all;
     width: 10px;
     text-align: center;
